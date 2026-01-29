@@ -935,3 +935,23 @@ body {
       font-size: 1.1rem;
   }
 }
+/* Heart Trail Animation */
+.trail-heart {
+    position: fixed;
+    color: var(--color-heart);
+    font-size: 20px;
+    pointer-events: none;
+    animation: floatUp 1s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -150%) scale(0);
+        opacity: 0;
+    }
+}
